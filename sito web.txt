@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Braccialetti di mattia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #f08a5d;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #f08a5d;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .gallery-item h3 {
+      margin: 10px 0 5px;
+    }
+    .gallery-item p {
+      font-size: 0.9em;
+      color: #666;
+    }
+    section#about {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    section#contact {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    button {
+      background-color: #f08a5d;
+      border: none;
+      color: white;
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #d96c3a;
+    }
+    footer {
+      margin: 40px 0 20px;
+      text-align: center;
+      color: #999;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>Braccialetti di mattia</header>
+
+<main>
+  <section id="gallery">
+    <h2>I miei braccialetti</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://img.kwcdn.com/product/fancy/43f00f3d-26ff-4446-a1ab-27e5c5b221cc.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Braccialetto 1" />
+        <h3>Braccialetto Elegante</h3>
+        <p>Realizzato a mano con materiali di alta qualità.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://th.bing.com/th/id/R.64d1c822d14e674dadab9951b0034798?rik=OxjGF9rr3NtC6g&pid=ImgRaw&r=0" alt="Braccialetto 2" />
+        <h3>Braccialetto Colorato</h3>
+        <p>Perfetto per ogni occasione, leggero e resistente.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://img.kwcdn.com/product/fancy/95a5489d-aa59-49a9-8fc8-142221a82aef.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Braccialetto 3" />
+        <h3>Braccialetto Minimal</h3>
+        <p>Design semplice e raffinato per uno stile moderno.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Chi sono</h2>
+    <p>Ciao! Sono mattia, appassionato di creazioni artigianali. Creo braccialetti unici fatti a mano con passione e cura, ideali per chi ama uno stile originale e personale.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contattami</h2>
+    <form onsubmit="alert('Grazie per avermi scritto! Ti risponderò presto.'); return false;">
+      <input type="text" placeholder="Il tuo nome" required />
+      <input type="email" placeholder="La tua email" required />
+      <textarea rows="4" placeholder="Il tuo messaggio" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Braccialetti di mattia. Tutti i diritti riservati.
+</footer>
+
+</body>
+</html>
